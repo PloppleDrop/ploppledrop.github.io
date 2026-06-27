@@ -398,7 +398,7 @@
         { id: 'dropped', label: 'Plopples dropped', f: function (m) { return sumPrefix(m, 'drop.'); } },
         { id: 'merged', label: 'Merges', f: function (m) { return sumPrefix(m, 'merge.'); } },
         { id: 'discovered', label: 'Plopples discovered', f: function (m) { return sumPrefix(m, 'discover.'); } },
-        { id: 'games', label: 'Games played', f: function (m) { return m['game.over'] || 0; } },
+        { id: 'games', label: 'Games played', f: function (m) { return m['game.start'] || 0; } },
         { id: 'powerups', label: 'Power-ups used', f: function (m) { return sumPrefix(m, 'powerup.'); } },
       ];
 
